@@ -1,0 +1,52 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f4f4f4;
+	overflow: hidden;
+  }
+  
+  .content {
+	text-align: center;
+	z-index: 1;
+	position: relative;
+  }
+  
+  .logo {
+	width: 50px; /* Размер иконки */
+  }
+  
+  button {
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  button:hover {
+	background-color: #0056b3;
+  }
+  
+  .hidden {
+	display: none; /* Видео скрыто изначально */
+  }
+  
+  #backgroundVideo {
+	position: fixed; /* Видео занимает весь экран */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Видео покрывает весь экран */
+	z-index: -1;
+  }
+  
